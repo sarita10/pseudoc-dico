@@ -8,7 +8,7 @@ Algoritmo rellenarizquierda
 	falta <- tam-longitud(frase)
 	cad <- generarCadena('*',falta)
 	// Monto la cadena final
-	rsdo <- Concatenar(frase,cad)
+	rsdo <- Concatenar(cad,frase)
 	Escribir rsdo
 FinAlgoritmo
 
@@ -18,7 +18,7 @@ FinAlgoritmo
 Funcion rsdo = generarCadena(Car,num)
 	rsdo <- ''
 	Para tam<-1 Hasta num Hacer
-		Escribir "*" sin saltar
+		rsdo=Concatenar(rsdo,"*")
 	FinPara
 FinFuncion
 
